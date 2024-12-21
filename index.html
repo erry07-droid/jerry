@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Do You Love Me?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #FFDCE0; /* Light pink background */
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .container img {
+      width: 150px; /* Adjust size as needed */
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .container h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .container p {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      font-size: 16px;
+      color: white;
+      background-color: #FF7B7B;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #FF4B4B;
+    }
+
+    .buttons button.no {
+      background-color: #CCCCCC;
+    }
+
+    .buttons button.no:hover {
+      background-color: #AAAAAA;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="200.webp" alt="200.webp"> <!-- Replace with your image file path -->
+    <h1>DO you love me? 😊</h1>
+    <p>~Shivam is all yours</p>
+    <div class="buttons">
+      <!-- Add link to 'yes.html' for the Yes button -->
+      <button onclick="window.location.href='yes.html'">Yes</button>
+
+      <!-- Add link to 'no.html' for the No button -->
+      <button class="no" onclick="window.location.href='no.html'">No</button>
+    </div>
+  </div>
+</body>
+</html>
